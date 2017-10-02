@@ -1,6 +1,6 @@
 {
   "name": "TAssetPicker",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "platforms": {
     "ios": "8.0"
   },
@@ -16,12 +16,12 @@
   },
   "source": {
     "git": "https://github.com/turkeyaa/TAssetPicker.git",
-    "tag": "0.0.4"
+    "tag": "0.0.5"
   },
   "source_files": "Classes/**/*.{swift}",
   "resource_bundles": {
     "TAssetPicker": [
-      "AssetPickerDemo/AssetPicker/Classes/Images/*.{png}"
+      "AssetPickerDemo/AssetPicker/Images/*.{png}"
     ]
   },
   "requires_arc": true,

@@ -17,9 +17,10 @@ open class Configuration: NSObject {
     open var rightImage: UIImage?
     
     open var numberBgColor: UIColor = UIColor.brown
+    
     open var titleColor: UIColor = UIColor.black
     
-    open var maxCount: Int = 2
+    open var maxCount: Int = 9
     
     public override init() {}
 }

@@ -75,7 +75,7 @@ class TopView: UIView {
     }
     convenience init(frame: CGRect, configu: Configuration) {
         self.init(frame: frame)
-        
+        self.configu = configu
         updateUI()
     }
     

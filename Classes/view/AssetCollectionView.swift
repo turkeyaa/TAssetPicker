@@ -63,7 +63,7 @@ extension AssetCollectionView : UICollectionViewDelegate {
         let info = self.images[indexPath.row]
         info.select = !info.select
         
-        if (info.select && selectImages.count > maxCount) {
+        if (info.select && selectImages.count >= maxCount) {
             info.select = !info.select
             return
         }

@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         showBtn = UIButton.init(type: .custom)
         showBtn?.setTitle("Asset picker", for: .normal)
         showBtn?.setTitleColor(UIColor.red, for: .normal)
-//        showBtn?.frame = CGRect.init(x: 10, y: 100, width: Device_width-20, height: 40)
         showBtn?.frame = CGRect.init(x: 10, y: 100, width: self.view.frame.size.width-20, height: 40)
         showBtn?.addTarget(self, action: #selector(showEvent), for: .touchUpInside)
         view.addSubview(showBtn!)
@@ -29,18 +28,20 @@ class ViewController: UIViewController {
     @objc func showEvent() -> Void {
         
         let configu = Configuration.init()
-//        configu.leftTitle = "取消"
-//        configu.rightTitle = "完成"
+        configu.leftTitle = "取消"
+        configu.rightTitle = "完成"
         configu.leftImage = UIImage.init(named: "close")
         configu.rightImage = UIImage.init(named: "completion")
 
-        configu.maxCount = 9
+        configu.maxCount = 2    // 最大可选中图片数量
+        
+        configu.numberBgColor = UIColor.red     // 数量背景颜色
         
         let vc = AssetPickerController.init(configu: configu)
         
 //        let vc = AssetPickerController()
         vc.assetResult = { (result) in
-            print(result)
+            print(result)   // AssetInfo 数组对象, 包含UIImage属性
         }
         present(vc, animated: true, completion: nil)
     }
@@ -49,7 +50,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
