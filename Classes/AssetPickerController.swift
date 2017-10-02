@@ -13,13 +13,13 @@ import Photos
 
 let topHeight: CGFloat = 50.0
 
-typealias AssetInfoBack = ([AssetInfo]) -> Void
-typealias AssetResultBack = () -> Void
+public typealias AssetInfoBack = ([AssetInfo]) -> Void
+public typealias AssetResultBack = () -> Void
 
 open class AssetPickerController: UIViewController {
     
     var images = [AssetInfo]()
-    var assetResult: AssetInfoBack?
+    open var assetResult: AssetInfoBack?
     var configuration: Configuration = Configuration.init()
     
     lazy var bigImageView: BigImageView = {

@@ -11,15 +11,15 @@ import UIKit
 
 open class Configuration: NSObject {
     
-    var leftTitle: String = "取消"
-    var rightTitle: String = "完成"
-    var leftImage: UIImage?
-    var rightImage: UIImage?
+    open var leftTitle: String = "取消"
+    open var rightTitle: String = "完成"
+    open var leftImage: UIImage?
+    open var rightImage: UIImage?
     
-    var numberBgColor: UIColor = UIColor.brown
-    var titleColor: UIColor = UIColor.black
+    open var numberBgColor: UIColor = UIColor.brown
+    open var titleColor: UIColor = UIColor.black
     
-    var maxCount: Int = 2
+    open var maxCount: Int = 2
     
     public override init() {}
 }

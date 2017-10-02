@@ -1,0 +1,6 @@
+framework module TAssetPicker {
+  umbrella header "TAssetPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

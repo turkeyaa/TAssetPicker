@@ -4,5 +4,5 @@ use_frameworks!
 target 'AssetPicker' do
     
     #pod 'SnapKit'
-    #pod 'TAssetPicker', path: '../'
+    pod 'TAssetPicker', path: '../'
 end

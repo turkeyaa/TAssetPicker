@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 0253eeea4d57ac9b4c9325533e96ae6e02f167d7
+PODS:
+  - TAssetPicker (0.0.4)
+
+DEPENDENCIES:
+  - TAssetPicker (from `../`)
+
+EXTERNAL SOURCES:
+  TAssetPicker:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TAssetPicker: 8452901cefc77bd36c0b2ccf0bb327d2e25abe9a
+
+PODFILE CHECKSUM: dd70e32802fa44974a867ac37806808d80989175
 
 COCOAPODS: 1.2.0.beta.1
