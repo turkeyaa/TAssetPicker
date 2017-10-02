@@ -1,0 +1,9 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'AssetPicker' do
+    
+    #pod 'AssetPicker'
+    #pod 'SnapKit'
+    #pod 'DSImagePicker', path: '../'
+end
