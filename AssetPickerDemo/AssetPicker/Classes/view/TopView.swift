@@ -13,6 +13,7 @@ class TopView: UIView {
     
     var closeBack: AssetResultBack?
     var completionBack: AssetResultBack?
+    var bigImageBack: AssetResultBack?
     
     lazy var closeBtn: UIButton = {
         let button = UIButton.init(type: UIButtonType.custom)
@@ -40,6 +41,10 @@ class TopView: UIView {
         label.textColor = UIColor.white
         label.isHidden = true
         label.frame = CGRect.init(x: Device_width-80, y: 10, width: 30, height: 30)
+        label.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(tapEvent))
+        label.addGestureRecognizer(tap)
+        
         return label
     }()
     lazy var compBtn: UIButton = {
@@ -51,7 +56,6 @@ class TopView: UIView {
         return button
     }()
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -59,8 +63,30 @@ class TopView: UIView {
         addSubview(titleLabel)
         addSubview(numberLabel)
         addSubview(compBtn)
+    }
+    convenience init(frame: CGRect, configu: Configuration) {
+        self.init(frame: frame)
         
-//        setupLayout()
+        if configu.leftTitle.count > 0 {
+            closeBtn.setImage(nil, for: .normal)
+            closeBtn.setTitle(configu.leftTitle, for: .normal)
+            closeBtn.frame = CGRect.init(x: 10, y: 10, width: 40, height: 30)
+        }
+        if configu.rightTitle.count > 0 {
+            compBtn.setImage(nil, for: .normal)
+            compBtn.setTitle(configu.rightTitle, for: .normal)
+            compBtn.frame = CGRect.init(x: Device_width-50, y: 10, width: 40, height: 30)
+        }
+        if configu.leftImage != nil {
+            closeBtn.setTitle("", for: .normal)
+            closeBtn.setImage(configu.leftImage!, for: .normal)
+        }
+        if configu.rightImage != nil {
+            compBtn.setTitle("", for: .normal)
+            compBtn.setImage(configu.rightImage, for: .normal)
+        }
+        numberLabel.backgroundColor = configu.numberBgColor
+        titleLabel.textColor = configu.titleColor
     }
     
     @objc func closeEvent() -> Void {
@@ -73,31 +99,11 @@ class TopView: UIView {
             completionBack!()
         }
     }
-    
-    /*
-    func setupLayout() -> Void {
-        closeBtn.snp.makeConstraints { (make) in
-            make.height.width.equalTo(30)
-            make.left.top.equalTo(10)
-        }
-        titleLabel.snp.makeConstraints { (make) in
-            make.left.right.equalTo(0)
-            make.height.equalTo(30)
-            make.top.equalTo(10)
-            make.centerX.equalTo(self.snp.centerX)
-        }
-        numberLabel.snp.makeConstraints { (make) in
-            make.width.height.equalTo(30)
-            make.top.equalTo(10)
-            make.right.equalTo(-50)
-        }
-        compBtn.snp.makeConstraints { (make) in
-            make.right.equalTo(-10)
-            make.height.width.equalTo(30)
-            make.top.equalTo(10)
+    @objc func tapEvent() -> Void {
+        if ((bigImageBack) != nil) {
+            bigImageBack!()
         }
     }
- */
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

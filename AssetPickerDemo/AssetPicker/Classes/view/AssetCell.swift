@@ -35,7 +35,6 @@ class AssetCell: UICollectionViewCell {
         
         self.contentView.addSubview(iconView)
         self.contentView.addSubview(selectView)
-//        self.setupLayout()
     }
     
     func updateSelect(select: Bool) -> Void {
@@ -46,18 +45,6 @@ class AssetCell: UICollectionViewCell {
             selectView.image = UIImage.init(named: "deselect")
         }
     }
-    
-    /*
-    func setupLayout() -> Void {
-        iconView.snp.makeConstraints { (make) in
-            make.left.right.top.bottom.equalTo(0)
-        }
-        selectView.snp.makeConstraints { (make) in
-            make.right.bottom.equalTo(-5)
-            make.width.height.equalTo(20)
-        }
-    }
- */
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

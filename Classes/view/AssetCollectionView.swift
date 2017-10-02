@@ -15,6 +15,8 @@ class AssetCollectionView: UIView {
     var itemCount: Int = 0
     var assetBack: AssetResultBack?
     
+    var maxCount: Int = 1
+    
     lazy var collectionView: UICollectionView = {
         
         let layout = UICollectionViewFlowLayout.init()
@@ -47,15 +49,7 @@ class AssetCollectionView: UIView {
     
     func setupUI() -> Void {
         addSubview(collectionView)
-//        setupLayout()
     }
-    /*
-    func setupLayout() -> Void {
-        collectionView.snp.makeConstraints { (make) in
-            make.left.right.top.bottom.equalTo(0)
-        }
-    }
- */
     
     func reloadData() -> Void {
         collectionView.reloadData()
@@ -65,23 +59,29 @@ class AssetCollectionView: UIView {
 extension AssetCollectionView : UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item)
+        
         let info = self.images[indexPath.row]
         info.select = !info.select
         
-        if info.select {
-            selectImages.append(info)
-            itemCount = itemCount+1
-        } else {
-            let index = selectImages.index(of: info)
-            selectImages.remove(at: index!)
-            itemCount = itemCount-1
+        if (info.select && selectImages.count > maxCount) {
+            info.select = !info.select
+            return
         }
-        // 刷新当前item
-        collectionView.reloadItems(at: [indexPath])
-        
-        if ((assetBack) != nil) {
-            assetBack!()
+        else {
+            if info.select {
+                selectImages.append(info)
+                itemCount = itemCount+1
+            } else {
+                let index = selectImages.index(of: info)
+                selectImages.remove(at: index!)
+                itemCount = itemCount-1
+            }
+            // 刷新当前item
+            collectionView.reloadItems(at: [indexPath])
+            
+            if ((assetBack) != nil) {
+                assetBack!()
+            }
         }
     }
 }

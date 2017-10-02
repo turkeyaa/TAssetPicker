@@ -11,11 +11,15 @@ import UIKit
 
 class Configuration: NSObject {
     
-    let leftTitle: String = "关闭"
-    let rightTitle: String = "完成"
-    let leftImage: UIImage = UIImage.init(named: "close")!
-    let rightImage: UIImage = UIImage.init(named: "completion")!
+    var leftTitle: String = "取消"
+    var rightTitle: String = "完成"
+    var leftImage: UIImage?
+    var rightImage: UIImage?
     
+    var numberBgColor: UIColor = UIColor.brown
+    var titleColor: UIColor = UIColor.black
+    
+    var maxCount: Int = 2
     
     public override init() {}
 }

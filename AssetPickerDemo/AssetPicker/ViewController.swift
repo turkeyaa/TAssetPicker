@@ -26,9 +26,11 @@ class ViewController: UIViewController {
     
     @objc func showEvent() -> Void {
         
-//        let configu = Configuration()
+        let configu = Configuration.init()
 //        configu.leftTitle = "取消"
 //        configu.rightTitle = "完成"
+        configu.leftImage = UIImage.init(named: "close")
+        configu.rightImage = UIImage.init(named: "completion")
         
 //        let vc = AssetPickerController.init(configu: configu)
         

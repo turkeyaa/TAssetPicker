@@ -3,7 +3,6 @@ use_frameworks!
 
 target 'AssetPicker' do
     
-    #pod 'AssetPicker'
     #pod 'SnapKit'
-    #pod 'DSImagePicker', path: '../'
+    #pod 'TAssetPicker', path: '../'
 end

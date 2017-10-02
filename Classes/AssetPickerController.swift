@@ -7,7 +7,6 @@
 //
 
 
-
 import Foundation
 import UIKit
 import Photos
@@ -21,10 +20,16 @@ class AssetPickerController: UIViewController {
     
     var images = [AssetInfo]()
     var assetResult: AssetInfoBack?
-    var configuration: Configuration?
+    var configuration: Configuration = Configuration.init()
+    
+    lazy var bigImageView: BigImageView = {
+        let view: BigImageView = BigImageView.init(frame: self.view.bounds)
+        return view
+    }()
     
     lazy var assetView: AssetCollectionView = {
         let assetView : AssetCollectionView = AssetCollectionView.init(frame: CGRect.init(x: 0, y: Device_status+topHeight, width: Device_width, height: Device_height-Device_status-topHeight))
+        assetView.maxCount = self.configuration.maxCount
         assetView.assetBack = {
             if (self.assetView.itemCount == 0) {
                 self.topView.numberLabel.isHidden = true
@@ -37,7 +42,8 @@ class AssetPickerController: UIViewController {
         return assetView
     }()
     lazy var topView: TopView = {
-        let view: TopView = TopView.init(frame: CGRect.init(x: 0, y: Device_status, width: Device_width, height: topHeight))
+        
+        let view: TopView = TopView.init(frame: CGRect.init(x: 0, y: Device_status, width: Device_width, height: topHeight),configu: configuration)
         view.closeBack = {
             self.dismiss(animated: true, completion: nil)
         }
@@ -46,6 +52,10 @@ class AssetPickerController: UIViewController {
                 self.assetResult!(self.assetView.selectImages)
             }
             self.dismiss(animated: true, completion: nil)
+        }
+        view.bigImageBack = {
+            self.view.addSubview(self.bigImageView)
+            self.bigImageView.images = self.assetView.selectImages
         }
         return view
     }()
