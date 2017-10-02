@@ -15,6 +15,15 @@ class TopView: UIView {
     var completionBack: AssetResultBack?
     var bigImageBack: AssetResultBack?
     
+    var configu = Configuration() {
+        willSet(newValue) {
+            
+        }
+        didSet {
+            updateUI()
+        }
+    }
+    
     lazy var closeBtn: UIButton = {
         let button = UIButton.init(type: UIButtonType.custom)
         button.setImage(UIImage.init(named: "close"), for: .normal)
@@ -67,6 +76,10 @@ class TopView: UIView {
     convenience init(frame: CGRect, configu: Configuration) {
         self.init(frame: frame)
         
+        updateUI()
+    }
+    
+    func updateUI() -> Void {
         if configu.leftTitle.count > 0 {
             closeBtn.setImage(nil, for: .normal)
             closeBtn.setTitle(configu.leftTitle, for: .normal)
@@ -85,6 +98,7 @@ class TopView: UIView {
             compBtn.setTitle("", for: .normal)
             compBtn.setImage(configu.rightImage, for: .normal)
         }
+        
         numberLabel.backgroundColor = configu.numberBgColor
         titleLabel.textColor = configu.titleColor
     }

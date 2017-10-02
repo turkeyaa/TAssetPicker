@@ -22,7 +22,7 @@ present(vc, animated: true, completion: nil)
 ##### Configuration
 
 You can inject `Configuration` instance to TAssetPicker, which allows you to configure text, colors,image, fonts, supports limiting the amount of images that can be selected, it defaults
-to 1 and max to 9
+to zero, which means that the user can select as many images as he/she wants.
 
 ```swift
 let configu = Configuration.init()

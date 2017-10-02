@@ -43,7 +43,7 @@ open class AssetPickerController: UIViewController {
     }()
     lazy var topView: TopView = {
         
-        let view: TopView = TopView.init(frame: CGRect.init(x: 0, y: Device_status, width: Device_width, height: topHeight),configu: configuration)
+        let view: TopView = TopView.init(frame: CGRect.init(x: 0, y: Device_status, width: Device_width, height: topHeight),configu: self.configuration)
         view.closeBack = {
             self.dismiss(animated: true, completion: nil)
         }
