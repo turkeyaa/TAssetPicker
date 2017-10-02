@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AssetInfo: NSObject {
+open class AssetInfo: NSObject {
     lazy var image: UIImage = UIImage.init()
     var select: Bool = false
 }

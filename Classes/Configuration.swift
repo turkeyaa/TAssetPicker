@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Configuration: NSObject {
+open class Configuration: NSObject {
     
     var leftTitle: String = "取消"
     var rightTitle: String = "完成"

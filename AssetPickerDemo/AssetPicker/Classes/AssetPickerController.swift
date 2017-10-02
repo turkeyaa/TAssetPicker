@@ -16,7 +16,7 @@ let topHeight: CGFloat = 50.0
 typealias AssetInfoBack = ([AssetInfo]) -> Void
 typealias AssetResultBack = () -> Void
 
-class AssetPickerController: UIViewController {
+open class AssetPickerController: UIViewController {
     
     var images = [AssetInfo]()
     var assetResult: AssetInfoBack?
@@ -68,11 +68,11 @@ class AssetPickerController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.white
