@@ -94,8 +94,9 @@ open class AssetPickerController: UIViewController {
         let option = PHImageRequestOptions() //可以设置图像的质量、版本、也会有参数控制图像的裁剪
         //返回一个单一结果，返回前会堵塞线程，默认是false
         option.isSynchronous = true
+        option.deliveryMode = .highQualityFormat
         
-        manager.requestImage(for: asset, targetSize: CGSize.init(width: 100, height: 200), contentMode: .aspectFit, options: option) { (thumbnailImage, info) in
+        manager.requestImage(for: asset, targetSize: CGSize.init(width: 720, height: 1280), contentMode: .aspectFit, options: option) { (thumbnailImage, info) in
             let info = AssetInfo.init()
             info.image = thumbnailImage!
             self.images.append(info)
@@ -104,7 +105,7 @@ open class AssetPickerController: UIViewController {
     
     func readAlbum() -> Void {
         let smartAlbums: PHFetchResult = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: nil)
-        print("zhineng:\(smartAlbums.count)个")
+        
         for index in 0..<smartAlbums.count {
             // 获取一个相册
             let collection = smartAlbums[index]

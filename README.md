@@ -1,9 +1,9 @@
 # TAssetPicker
 An integration of Photos which allows you to pick media(image/video) effortlessly, with circular crop supported, and written in Swift
 
-## 效果图
+## Dynamic graph
 
-![动图](http://turkeyaa.github.io/assets/2017/TAssetPicker.gif)
+![Dynamic graph](http://turkeyaa.github.io/assets/2017/TAssetPicker.gif)
 
 ## Usage
 
@@ -29,7 +29,7 @@ let configu = Configuration.init()
 configu.leftTitle = "取消"
 configu.rightTitle = "完成"
         
-configu.leftImage = UIImage.init(named: "close")
+configu.leftImage = UIImage.init(named: "cancel")
 configu.rightImage = UIImage.init(named: "completion")
 
 configu.maxCount = 9  // 可选中图片个数
@@ -47,14 +47,20 @@ it, simply add the following line to your Podfile:
 pod 'TAssetPicker'
 ```
 
-**TAssetPicker** is also available through [turkeyaa](https://github.com/turkeyaa/TAssetPicker).
-To install just write into your Cartfile:
+**TAssetPicker** is also available through [turkeyaa](https://github.com/turkeyaa/TAssetPicker). manually: drag 'Classes' in TAssetPicker/Classes to your project, make sure to check `copy items if needed`
 
-```ruby
-github "turkeyaa/TAssetPicker"
-```
+## Requirements
+
+iOS 8.0
+
+## Contribution
+
+* Issue me, or send it to `18668089860@163.com`
+* Fork and send pull request
 
 ## Author
+
+Wenhua Yu, 18668089860@163.com
 
 
 ## License

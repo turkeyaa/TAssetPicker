@@ -14,6 +14,7 @@
 		A066C3F81F7642A8003E1DB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A066C3F61F7642A8003E1DB3 /* LaunchScreen.storyboard */; };
 		A066C4031F7642A8003E1DB3 /* AssetPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066C4021F7642A8003E1DB3 /* AssetPickerTests.swift */; };
 		A066C40E1F7642A8003E1DB3 /* AssetPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066C40D1F7642A8003E1DB3 /* AssetPickerUITests.swift */; };
+		A07D2F001F83286200BEEA44 /* TAssetPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07D2F011F83286200BEEA44 /* TAssetPicker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		A066C4091F7642A8003E1DB3 /* AssetPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssetPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A066C40D1F7642A8003E1DB3 /* AssetPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPickerUITests.swift; sourceTree = "<group>"; };
 		A066C40F1F7642A8003E1DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A07D2F011F83286200BEEA44 /* TAssetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TAssetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AA2599565DCEC3CDAF6BB3 /* Pods-AssetPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssetPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AssetPicker/Pods-AssetPicker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07D2F001F83286200BEEA44 /* TAssetPicker.framework in Frameworks */,
 				147B0B8B1EE07B57F0DCA8CA /* Pods_AssetPicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +87,7 @@
 		776D2D9D327A74E615C010AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A07D2F011F83286200BEEA44 /* TAssetPicker.framework */,
 				3FC071822A53BFCB7B52E95C /* Pods_AssetPicker.framework */,
 			);
 			name = Frameworks;
