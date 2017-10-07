@@ -39,12 +39,12 @@ class AssetCell: UICollectionViewCell {
     
     func updateSelect(select: Bool) -> Void {
         if select {
-            selectView.image = UIImage.init(named: "select")
-//            selectView.image = AssetManager.getImage("select")
+//            selectView.image = UIImage.init(named: "select")
+            selectView.image = AssetManager.getImage("select")
         }
         else {
-            selectView.image = UIImage.init(named: "deselect")
-//            selectView.image = AssetManager.getImage("deselect")
+//            selectView.image = UIImage.init(named: "deselect")
+            selectView.image = AssetManager.getImage("deselect")
         }
     }
     
