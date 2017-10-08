@@ -26,7 +26,6 @@ class TopView: UIView {
     
     lazy var closeBtn: UIButton = {
         let button = UIButton.init(type: UIButtonType.custom)
-        button.setImage(UIImage.init(named: "close"), for: .normal)
         button.addTarget(self, action: #selector(closeEvent), for: .touchUpInside)
         button.setTitleColor(UIColor.lightGray, for: .normal)
         button.frame = CGRect.init(x: 10, y: 10, width: 30, height: 30)
@@ -58,7 +57,6 @@ class TopView: UIView {
     }()
     lazy var compBtn: UIButton = {
         let button = UIButton.init(type: UIButtonType.custom)
-        button.setImage(UIImage.init(named: "completion"), for: .normal)
         button.addTarget(self, action: #selector(completionEvent), for: .touchUpInside)
         button.setTitleColor(UIColor.lightGray, for: .normal)
         button.frame = CGRect.init(x: Device_width-50, y: 10, width: 30, height: 30)

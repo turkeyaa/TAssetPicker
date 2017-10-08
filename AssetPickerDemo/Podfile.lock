@@ -1,5 +1,5 @@
 PODS:
-  - TAssetPicker (0.0.6)
+  - TAssetPicker (0.0.7)
 
 DEPENDENCIES:
   - TAssetPicker (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TAssetPicker: 008727968fb97fdb3f2f951e904ffff2d9df02b2
+  TAssetPicker: df9c011a56b7a03743c200098d1ec8a9ceaf2c77
 
 PODFILE CHECKSUM: dd70e32802fa44974a867ac37806808d80989175
 

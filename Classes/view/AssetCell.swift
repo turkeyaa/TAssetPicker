@@ -26,7 +26,6 @@ class AssetCell: UICollectionViewCell {
         imageView.clipsToBounds = true
         imageView.frame = CGRect.init(x: self.frame.size.width-25, y: 5, width: 20, height: 20)
         imageView.contentMode = .scaleAspectFill
-//        imageView.image = UIImage.init(named: "deselect")
         return imageView
     }()
     
@@ -39,11 +38,9 @@ class AssetCell: UICollectionViewCell {
     
     func updateSelect(select: Bool) -> Void {
         if select {
-//            selectView.image = UIImage.init(named: "select")
             selectView.image = AssetManager.getImage("select")
         }
         else {
-//            selectView.image = UIImage.init(named: "deselect")
             selectView.image = AssetManager.getImage("deselect")
         }
     }

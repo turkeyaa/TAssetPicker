@@ -1,6 +1,6 @@
 {
   "name": "TAssetPicker",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "platforms": {
     "ios": "8.0"
   },
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/turkeyaa/TAssetPicker.git",
-    "tag": "0.0.6"
+    "tag": "0.0.7"
   },
   "source_files": "Classes/**/*.{swift}",
   "resource_bundles": {

@@ -65,6 +65,9 @@ extension AssetCollectionView : UICollectionViewDelegate {
         
         if (info.select && selectImages.count >= maxCount) {
             info.select = !info.select
+            
+            UIHelper.show(title: "最多可选择\(maxCount)张图片")
+            
             return
         }
         else {

@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00906D2DF35F90FFF471A6201829E0A7 /* TAssetPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FBB11E0F580045F18A3A40527FCAF /* TAssetPicker-dummy.m */; };
+		04C71CCB76E672428A38B2887CC00058 /* AssetPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCF60A2A414EA920EAC7C6C34670A7 /* AssetPickerController.swift */; };
 		0FB2121AB47EC603590D899D0C32BF1D /* Pods-AssetPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E4D1FFDA4B3F494BB6F7DE7B004C60 /* Pods-AssetPicker-dummy.m */; };
-		1659645365384F62201EBAAACA32DFDA /* complete.png in Resources */ = {isa = PBXBuildFile; fileRef = BC06531106B86CD710F41A5DBC292BC7 /* complete.png */; };
-		2AFD2DD5B2D2B72302961D80F00F4A06 /* UIMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371BAA2F4BA85C8D7D5C1986F572FD39 /* UIMacro.swift */; };
-		35CA38A2195E0351AADDBEE48603B5EF /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB51B0457CFCC09A1A5537E01EDD12 /* Configuration.swift */; };
-		3EC9136A523F4C9B7EE3D9E2973A7C14 /* TAssetPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C7876ED505DEE386F4B0315D224B6D0 /* TAssetPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1659645365384F62201EBAAACA32DFDA /* complete.png in Resources */ = {isa = PBXBuildFile; fileRef = E82EFB17535F3D090C7F98E7B51A6E3E /* complete.png */; };
+		1C5F0CE7EBAC4CB4F277D99C2339BFA1 /* BigImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAF7FF98E8E6195F5B3C31046B1A52 /* BigImageView.swift */; };
+		2803FA4F827339AE93150B3058D3093D /* AssetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CA3D4E4BD7E573F847B451561CF66A /* AssetInfo.swift */; };
+		3EC9136A523F4C9B7EE3D9E2973A7C14 /* TAssetPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5920C7A78947ECCB18551ABDBE9895 /* TAssetPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4028AC697BAA613B4FB46E8671EBB77E /* TAssetPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C26541F9DB2FA60EF8D95EF6764D0C7C /* TAssetPicker.bundle */; };
-		4BC50647578BDA650C967674727DB4D1 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = D661F7B07A04591F0B5DFB50F9235D25 /* close.png */; };
-		58CDF173D4B1EB99180E655817970D9D /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB8874168086896EA1AD7406EA3DCA1 /* select.png */; };
+		4BC50647578BDA650C967674727DB4D1 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C995FAAA6C145B1420381A1472C943 /* close.png */; };
+		58CDF173D4B1EB99180E655817970D9D /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F780309A8A6A5E50917A13BA696553 /* select.png */; };
 		5A9905C227ED18101F6B64C0E0FA76A3 /* Pods-AssetPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E93A6BC9139C6FDE2FD47619FAAC96CE /* Pods-AssetPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FDFDED4C6BF9598BB6C3181706B5548 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		620B87F1378A5F40EDD1DCDD4DCDCD23 /* AssetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A992254F95F17AAD45A0B843FA2C34AE /* AssetInfo.swift */; };
-		68A2E0708079C6548ACA90F5AC7A0AD5 /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB62850BC67C1F33991C6AF4F27BD6F5 /* AssetCell.swift */; };
+		61ECAD38294B34D49B82CAB77D712AEF /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205E94E5B636D084C0EF373EAC8B2052 /* AssetManager.swift */; };
+		759BE3E4AC9E26F8A88A9011B0A80310 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C45EC40CCA6DFE1FBCA2CD191AC4E /* Configuration.swift */; };
 		78F5A749F572D646209377B8106C2FAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		7FEEE675F5E879A2D4E8390EEC79BBF8 /* deselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E63B02AE1CE36981C7027FA3FD1F342 /* deselect.png */; };
-		A07D2EFF1F8324CD00BEEA44 /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D2EFE1F8324CC00BEEA44 /* AssetManager.swift */; };
-		AA9336E84155A77823D2C5C0255ED595 /* AssetCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6993330D90B7360092A611C5724F15 /* AssetCollectionView.swift */; };
-		CED19833CE578F32C34D3BCABE3E7B49 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782F5A9E181B57380AFC5133D89EDFE /* TopView.swift */; };
-		DF856E1DB7F13F39B9E5DA9DF59EEBA0 /* AssetPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF373C96276EA337F78990277EBC50B6 /* AssetPickerController.swift */; };
-		E0E8FE1B1FB2679128A40CFE81F26A5C /* BigImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CBD144B2F50D6CAB6519A13D2EAEC4 /* BigImageView.swift */; };
-		E7B9B23357C73ACDB07EA29C3B06F1CA /* TAssetPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1648AFCB8B96B203910581BE6ECCB30 /* TAssetPicker-dummy.m */; };
+		7B387200BA6699E20F6E81F6A79FF3AB /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E422D5F7C89270CD2EE7CFF520B17630 /* AssetCell.swift */; };
+		7FEEE675F5E879A2D4E8390EEC79BBF8 /* deselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F264E3839E7CF8B8B4555988E1B7CDC /* deselect.png */; };
+		813CBC5E6C2711B2FC73244F2F9A2CF4 /* UIMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3801A48D9877E70C6F6DEFB63EA9EE34 /* UIMacro.swift */; };
+		B099A356E7241C39A237519052941537 /* AssetCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB83453AE3AC61D77C59B9DD559FE19 /* AssetCollectionView.swift */; };
+		F35AF397FB7E026A73B98B6A569EA759 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C285DF639443AEF84695A007B6541 /* TopView.swift */; };
 		FF31122C0611AC7A745109A4413F2B89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,42 +48,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C7876ED505DEE386F4B0315D224B6D0 /* TAssetPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAssetPicker-umbrella.h"; sourceTree = "<group>"; };
+		17CA3D4E4BD7E573F847B451561CF66A /* AssetInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetInfo.swift; sourceTree = "<group>"; };
+		205E94E5B636D084C0EF373EAC8B2052 /* AssetManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetManager.swift; sourceTree = "<group>"; };
 		26B47869AA8E0AC53031C96BE6D91CCB /* Pods-AssetPicker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AssetPicker-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2782F5A9E181B57380AFC5133D89EDFE /* TopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
-		27E74E9B639EE75D9CC1E0C7188F99A7 /* TAssetPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAssetPicker-prefix.pch"; sourceTree = "<group>"; };
-		371BAA2F4BA85C8D7D5C1986F572FD39 /* UIMacro.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIMacro.swift; sourceTree = "<group>"; };
-		3AB8874168086896EA1AD7406EA3DCA1 /* select.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
-		3EFB51B0457CFCC09A1A5537E01EDD12 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		3801A48D9877E70C6F6DEFB63EA9EE34 /* UIMacro.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIMacro.swift; sourceTree = "<group>"; };
+		3C3FBB11E0F580045F18A3A40527FCAF /* TAssetPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TAssetPicker-dummy.m"; sourceTree = "<group>"; };
+		408C45EC40CCA6DFE1FBCA2CD191AC4E /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		4A9C285DF639443AEF84695A007B6541 /* TopView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		4B131E2972893EB8E38D3D543E24E168 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F264E3839E7CF8B8B4555988E1B7CDC /* deselect.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = deselect.png; sourceTree = "<group>"; };
 		56330B3A10B0654ECE2E48711880C50D /* Pods-AssetPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssetPicker.release.xcconfig"; sourceTree = "<group>"; };
+		5BB83453AE3AC61D77C59B9DD559FE19 /* AssetCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetCollectionView.swift; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6E5FAAC9EA7757E540B1FA4D9B87ED17 /* TAssetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TAssetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8611FC82D0CFD084F87A1355BFD33CC6 /* TAssetPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TAssetPicker.modulemap; sourceTree = "<group>"; };
-		8E63B02AE1CE36981C7027FA3FD1F342 /* deselect.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = deselect.png; sourceTree = "<group>"; };
-		90D44F76C2BE1FE981147C06C524B091 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A89A736DAE589A1F5964062AF1784F1 /* TAssetPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TAssetPicker.xcconfig; sourceTree = "<group>"; };
+		8B15A7F533E2875B298DC0A468F2EC50 /* ResourceBundle-TAssetPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TAssetPicker-Info.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9427043DBE4D630FB966C062172DF3D4 /* ResourceBundle-TAssetPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TAssetPicker-Info.plist"; sourceTree = "<group>"; };
+		96C995FAAA6C145B1420381A1472C943 /* close.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		9A6F8B2E253978BF7C2CED6E8C680214 /* Pods-AssetPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssetPicker.debug.xcconfig"; sourceTree = "<group>"; };
-		A07D2EFE1F8324CC00BEEA44 /* AssetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetManager.swift; sourceTree = "<group>"; };
-		A1648AFCB8B96B203910581BE6ECCB30 /* TAssetPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TAssetPicker-dummy.m"; sourceTree = "<group>"; };
+		A0A659061F8A009000415069 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		A1A034248818A495FFEE6E637F087D9C /* Pods-AssetPicker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssetPicker-acknowledgements.plist"; sourceTree = "<group>"; };
-		A992254F95F17AAD45A0B843FA2C34AE /* AssetInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetInfo.swift; sourceTree = "<group>"; };
+		A1F780309A8A6A5E50917A13BA696553 /* select.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
 		B10F15899FC2BD1A7071F783365D6AA7 /* Pods-AssetPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AssetPicker.modulemap"; sourceTree = "<group>"; };
+		B7E22D1BF362601389066B9166592352 /* TAssetPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAssetPicker-prefix.pch"; sourceTree = "<group>"; };
 		B7E4D1FFDA4B3F494BB6F7DE7B004C60 /* Pods-AssetPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AssetPicker-dummy.m"; sourceTree = "<group>"; };
-		BC06531106B86CD710F41A5DBC292BC7 /* complete.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = complete.png; sourceTree = "<group>"; };
+		BBDAF7FF98E8E6195F5B3C31046B1A52 /* BigImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BigImageView.swift; sourceTree = "<group>"; };
 		BF707D951AAAA06C2CD81F8ECE2E0ADA /* Pods_AssetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26541F9DB2FA60EF8D95EF6764D0C7C /* TAssetPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAssetPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2CBD144B2F50D6CAB6519A13D2EAEC4 /* BigImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BigImageView.swift; sourceTree = "<group>"; };
-		C61FB014ED79BFA7DF06EDEB10CD2590 /* TAssetPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TAssetPicker.xcconfig; sourceTree = "<group>"; };
 		C789EDDF52FD5E298E65099445D686F3 /* Pods-AssetPicker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AssetPicker-frameworks.sh"; sourceTree = "<group>"; };
-		CC6993330D90B7360092A611C5724F15 /* AssetCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetCollectionView.swift; sourceTree = "<group>"; };
-		D661F7B07A04591F0B5DFB50F9235D25 /* close.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
-		DF373C96276EA337F78990277EBC50B6 /* AssetPickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetPickerController.swift; sourceTree = "<group>"; };
+		E422D5F7C89270CD2EE7CFF520B17630 /* AssetCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetCell.swift; sourceTree = "<group>"; };
+		E82EFB17535F3D090C7F98E7B51A6E3E /* complete.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = complete.png; sourceTree = "<group>"; };
 		E93A6BC9139C6FDE2FD47619FAAC96CE /* Pods-AssetPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AssetPicker-umbrella.h"; sourceTree = "<group>"; };
+		ED5920C7A78947ECCB18551ABDBE9895 /* TAssetPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TAssetPicker-umbrella.h"; sourceTree = "<group>"; };
 		F55FD065E6B4934633FA1BC6ED174698 /* Pods-AssetPicker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AssetPicker-resources.sh"; sourceTree = "<group>"; };
+		F5BCF60A2A414EA920EAC7C6C34670A7 /* AssetPickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetPickerController.swift; sourceTree = "<group>"; };
 		F9FA199CEEF57D39CC5040E67F1A9E5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB62850BC67C1F33991C6AF4F27BD6F5 /* AssetCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetCell.swift; sourceTree = "<group>"; };
+		FB021980EFBB6321BB3D251519366B02 /* TAssetPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TAssetPicker.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,57 +115,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		007C8E247782D7B489F86932477788DD /* view */ = {
-			isa = PBXGroup;
-			children = (
-				FB62850BC67C1F33991C6AF4F27BD6F5 /* AssetCell.swift */,
-				CC6993330D90B7360092A611C5724F15 /* AssetCollectionView.swift */,
-				C2CBD144B2F50D6CAB6519A13D2EAEC4 /* BigImageView.swift */,
-				2782F5A9E181B57380AFC5133D89EDFE /* TopView.swift */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		1BAB1C66EA249535C42BE3381FF7C695 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				335A3016DA9C6309154D1CB4A01CEFD6 /* Images */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		1BF6FF7ECF2A221D23A8550F4ECC86D6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				90D44F76C2BE1FE981147C06C524B091 /* Info.plist */,
-				9427043DBE4D630FB966C062172DF3D4 /* ResourceBundle-TAssetPicker-Info.plist */,
-				8611FC82D0CFD084F87A1355BFD33CC6 /* TAssetPicker.modulemap */,
-				C61FB014ED79BFA7DF06EDEB10CD2590 /* TAssetPicker.xcconfig */,
-				A1648AFCB8B96B203910581BE6ECCB30 /* TAssetPicker-dummy.m */,
-				27E74E9B639EE75D9CC1E0C7188F99A7 /* TAssetPicker-prefix.pch */,
-				0C7876ED505DEE386F4B0315D224B6D0 /* TAssetPicker-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "AssetPickerDemo/Pods/Target Support Files/TAssetPicker";
-			sourceTree = "<group>";
-		};
 		2DD3F742155283E84837EBCCE462FE5E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				A0A5173A720030D9A256159BA7E50AF7 /* Pods-AssetPicker */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		335A3016DA9C6309154D1CB4A01CEFD6 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				D661F7B07A04591F0B5DFB50F9235D25 /* close.png */,
-				BC06531106B86CD710F41A5DBC292BC7 /* complete.png */,
-				8E63B02AE1CE36981C7027FA3FD1F342 /* deselect.png */,
-				3AB8874168086896EA1AD7406EA3DCA1 /* select.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -175,20 +131,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4FB2DFD7FD2EDD6097B92A3C13513B62 /* macro */ = {
+		58FE6F0E44EE9C2D974BD98D13CCDD37 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				371BAA2F4BA85C8D7D5C1986F572FD39 /* UIMacro.swift */,
+				96C995FAAA6C145B1420381A1472C943 /* close.png */,
+				E82EFB17535F3D090C7F98E7B51A6E3E /* complete.png */,
+				4F264E3839E7CF8B8B4555988E1B7CDC /* deselect.png */,
+				A1F780309A8A6A5E50917A13BA696553 /* select.png */,
 			);
-			path = macro;
+			path = Images;
 			sourceTree = "<group>";
 		};
-		59A339ADF2C1155AA4F1E8D9A4395E64 /* model */ = {
+		624BC74BD95D6A918FE4BC7266A35298 /* manager */ = {
 			isa = PBXGroup;
 			children = (
-				A992254F95F17AAD45A0B843FA2C34AE /* AssetInfo.swift */,
+				205E94E5B636D084C0EF373EAC8B2052 /* AssetManager.swift */,
 			);
-			path = model;
+			path = manager;
 			sourceTree = "<group>";
 		};
 		782E5CBA4DCD56D6379CE05B68D03CE7 /* Products */ = {
@@ -212,12 +171,49 @@
 			);
 			sourceTree = "<group>";
 		};
-		A07D2EFD1F8324C100BEEA44 /* manager */ = {
+		874374B0605E2B19B5C9E2FC387C38C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A07D2EFE1F8324CC00BEEA44 /* AssetManager.swift */,
+				58FE6F0E44EE9C2D974BD98D13CCDD37 /* Images */,
 			);
-			path = manager;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8B159B28419FAB01273194A052116EC3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E422D5F7C89270CD2EE7CFF520B17630 /* AssetCell.swift */,
+				5BB83453AE3AC61D77C59B9DD559FE19 /* AssetCollectionView.swift */,
+				BBDAF7FF98E8E6195F5B3C31046B1A52 /* BigImageView.swift */,
+				4A9C285DF639443AEF84695A007B6541 /* TopView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9B4336429F24E531113E2CF273327844 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B131E2972893EB8E38D3D543E24E168 /* Info.plist */,
+				8B15A7F533E2875B298DC0A468F2EC50 /* ResourceBundle-TAssetPicker-Info.plist */,
+				FB021980EFBB6321BB3D251519366B02 /* TAssetPicker.modulemap */,
+				8A89A736DAE589A1F5964062AF1784F1 /* TAssetPicker.xcconfig */,
+				3C3FBB11E0F580045F18A3A40527FCAF /* TAssetPicker-dummy.m */,
+				B7E22D1BF362601389066B9166592352 /* TAssetPicker-prefix.pch */,
+				ED5920C7A78947ECCB18551ABDBE9895 /* TAssetPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "AssetPickerDemo/Pods/Target Support Files/TAssetPicker";
+			sourceTree = "<group>";
+		};
+		9DD6D1FB64AD4F45FEB9FB9269EE0065 /* TAssetPicker */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9F6C7A18B58177E2B238AFC7B615E /* Classes */,
+				874374B0605E2B19B5C9E2FC387C38C1 /* Resources */,
+				9B4336429F24E531113E2CF273327844 /* Support Files */,
+			);
+			name = TAssetPicker;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		A0A5173A720030D9A256159BA7E50AF7 /* Pods-AssetPicker */ = {
@@ -238,23 +234,50 @@
 			path = "Target Support Files/Pods-AssetPicker";
 			sourceTree = "<group>";
 		};
+		A0A659051F8A009000415069 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				A0A659061F8A009000415069 /* UIHelper.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
 		A10BCCD01273B2A0543F74B9249B9857 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AD830D32C76DEC53D6133E589BBCF6EE /* TAssetPicker */,
+				9DD6D1FB64AD4F45FEB9FB9269EE0065 /* TAssetPicker */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		AD830D32C76DEC53D6133E589BBCF6EE /* TAssetPicker */ = {
+		C8B9F6C7A18B58177E2B238AFC7B615E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E83DA3EB46B6B8B191EB37EBB9A17857 /* Classes */,
-				1BAB1C66EA249535C42BE3381FF7C695 /* Resources */,
-				1BF6FF7ECF2A221D23A8550F4ECC86D6 /* Support Files */,
+				F5BCF60A2A414EA920EAC7C6C34670A7 /* AssetPickerController.swift */,
+				408C45EC40CCA6DFE1FBCA2CD191AC4E /* Configuration.swift */,
+				A0A659051F8A009000415069 /* helper */,
+				DADDE8E21D91919D46A2E9E55F77EB46 /* macro */,
+				624BC74BD95D6A918FE4BC7266A35298 /* manager */,
+				D1BB4EE956107C7962A0EAC7389AC2E0 /* model */,
+				8B159B28419FAB01273194A052116EC3 /* view */,
 			);
-			name = TAssetPicker;
-			path = ../..;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D1BB4EE956107C7962A0EAC7389AC2E0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				17CA3D4E4BD7E573F847B451561CF66A /* AssetInfo.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DADDE8E21D91919D46A2E9E55F77EB46 /* macro */ = {
+			isa = PBXGroup;
+			children = (
+				3801A48D9877E70C6F6DEFB63EA9EE34 /* UIMacro.swift */,
+			);
+			path = macro;
 			sourceTree = "<group>";
 		};
 		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
@@ -264,19 +287,6 @@
 				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		E83DA3EB46B6B8B191EB37EBB9A17857 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				DF373C96276EA337F78990277EBC50B6 /* AssetPickerController.swift */,
-				3EFB51B0457CFCC09A1A5537E01EDD12 /* Configuration.swift */,
-				A07D2EFD1F8324C100BEEA44 /* manager */,
-				4FB2DFD7FD2EDD6097B92A3C13513B62 /* macro */,
-				59A339ADF2C1155AA4F1E8D9A4395E64 /* model */,
-				007C8E247782D7B489F86932477788DD /* view */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,7 +332,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85749FEA971D5B6E40EB9BBD28394B62 /* Build configuration list for PBXNativeTarget "TAssetPicker" */;
 			buildPhases = (
-				364452C9772B656D539536E874E5F951 /* Sources */,
+				C88DE66A976317A23644454F04A57583 /* Sources */,
 				0E929B9E1784B39DF8458AE7BB70013F /* Frameworks */,
 				BAB429D4E9F70AD0480E7AE8384E903D /* Resources */,
 				A3C4589CDC244D78F197E9D0530822A8 /* Headers */,
@@ -363,11 +373,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					C84B39DD58A3E7F1F8E1660FDEA08087 = {
-						LastSwiftMigration = 0900;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -411,22 +416,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		364452C9772B656D539536E874E5F951 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68A2E0708079C6548ACA90F5AC7A0AD5 /* AssetCell.swift in Sources */,
-				AA9336E84155A77823D2C5C0255ED595 /* AssetCollectionView.swift in Sources */,
-				620B87F1378A5F40EDD1DCDD4DCDCD23 /* AssetInfo.swift in Sources */,
-				DF856E1DB7F13F39B9E5DA9DF59EEBA0 /* AssetPickerController.swift in Sources */,
-				E0E8FE1B1FB2679128A40CFE81F26A5C /* BigImageView.swift in Sources */,
-				35CA38A2195E0351AADDBEE48603B5EF /* Configuration.swift in Sources */,
-				E7B9B23357C73ACDB07EA29C3B06F1CA /* TAssetPicker-dummy.m in Sources */,
-				CED19833CE578F32C34D3BCABE3E7B49 /* TopView.swift in Sources */,
-				2AFD2DD5B2D2B72302961D80F00F4A06 /* UIMacro.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7E50B809554E78BF92AE65A5EF4BFD5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,8 +427,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A07D2EFF1F8324CD00BEEA44 /* AssetManager.swift in Sources */,
 				0FB2121AB47EC603590D899D0C32BF1D /* Pods-AssetPicker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88DE66A976317A23644454F04A57583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B387200BA6699E20F6E81F6A79FF3AB /* AssetCell.swift in Sources */,
+				B099A356E7241C39A237519052941537 /* AssetCollectionView.swift in Sources */,
+				2803FA4F827339AE93150B3058D3093D /* AssetInfo.swift in Sources */,
+				61ECAD38294B34D49B82CAB77D712AEF /* AssetManager.swift in Sources */,
+				04C71CCB76E672428A38B2887CC00058 /* AssetPickerController.swift in Sources */,
+				1C5F0CE7EBAC4CB4F277D99C2339BFA1 /* BigImageView.swift in Sources */,
+				759BE3E4AC9E26F8A88A9011B0A80310 /* Configuration.swift in Sources */,
+				00906D2DF35F90FFF471A6201829E0A7 /* TAssetPicker-dummy.m in Sources */,
+				F35AF397FB7E026A73B98B6A569EA759 /* TopView.swift in Sources */,
+				813CBC5E6C2711B2FC73244F2F9A2CF4 /* UIMacro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +512,7 @@
 		};
 		3FFFAEDB7EB8DF3FCE811ABABF29C3E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C61FB014ED79BFA7DF06EDEB10CD2590 /* TAssetPicker.xcconfig */;
+			baseConfigurationReference = 8A89A736DAE589A1F5964062AF1784F1 /* TAssetPicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -579,7 +584,7 @@
 		};
 		A1781CD4F0C8082EA5C37898C1DBCA54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C61FB014ED79BFA7DF06EDEB10CD2590 /* TAssetPicker.xcconfig */;
+			baseConfigurationReference = 8A89A736DAE589A1F5964062AF1784F1 /* TAssetPicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -612,7 +617,7 @@
 		};
 		AEFAA5C4F2A9FC5470963E8755959433 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C61FB014ED79BFA7DF06EDEB10CD2590 /* TAssetPicker.xcconfig */;
+			baseConfigurationReference = 8A89A736DAE589A1F5964062AF1784F1 /* TAssetPicker.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TAssetPicker";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -631,7 +636,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56330B3A10B0654ECE2E48711880C50D /* Pods-AssetPicker.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -657,7 +661,6 @@
 				PRODUCT_NAME = Pods_AssetPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -668,7 +671,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A6F8B2E253978BF7C2CED6E8C680214 /* Pods-AssetPicker.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -695,7 +697,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -704,7 +705,7 @@
 		};
 		FF6A5C537FF25390DB74AD157E77FD0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C61FB014ED79BFA7DF06EDEB10CD2590 /* TAssetPicker.xcconfig */;
+			baseConfigurationReference = 8A89A736DAE589A1F5964062AF1784F1 /* TAssetPicker.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TAssetPicker";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

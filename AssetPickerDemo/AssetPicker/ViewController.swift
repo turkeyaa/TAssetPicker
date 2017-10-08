@@ -30,10 +30,10 @@ class ViewController: UIViewController {
         let configu = Configuration.init()
         configu.leftTitle = "取消"
         configu.rightTitle = "完成"
-        configu.leftImage = UIImage.init(named: "close")
-        configu.rightImage = UIImage.init(named: "completion")
-
-        configu.maxCount = 2    // 最大可选中图片数量
+        configu.leftImage = UIImage.init(named: "d_close")
+        configu.rightImage = UIImage.init(named: "d_complete")
+        
+        configu.maxCount = 9    // 最大可选中图片数量
         
         configu.numberBgColor = UIColor.red     // 数量背景颜色
         
