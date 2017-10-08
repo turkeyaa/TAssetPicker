@@ -49,18 +49,9 @@ class UIHelper: UIView {
     }
     
     private func setupLayout() {
-        contentView.snp.makeConstraints { (make) in
-            make.left.equalTo(30)
-            make.right.equalTo(-30)
-            make.height.equalTo(contentHeight)
-            make.centerY.equalTo(centerY-contentHeight/2)
-        }
-        titleLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(self.contentView.snp.left)
-            make.right.equalTo(self.contentView.snp.right)
-            make.height.equalTo(contentHeight)
-            make.top.equalTo(self.contentView.snp.top)
-        }
+        
+        contentView.frame = CGRect.init(x: 30, y: centerY-contentHeight/2, width: Device_width-60, height: contentHeight)
+        titleLabel.frame = contentView.bounds
     }
     
     required init?(coder aDecoder: NSCoder) {
