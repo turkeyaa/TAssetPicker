@@ -51,7 +51,7 @@ class UIHelper: UIView {
     private func setupLayout() {
         
         contentView.frame = CGRect.init(x: 30, y: centerY-contentHeight/2, width: Device_width-60, height: contentHeight)
-        titleLabel.frame = contentView.bounds
+        titleLabel.frame = contentView.frame
     }
     
     required init?(coder aDecoder: NSCoder) {
