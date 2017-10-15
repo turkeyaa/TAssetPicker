@@ -13,7 +13,7 @@ import Photos
 
 let topHeight: CGFloat = 50.0
 
-public typealias AssetInfoBack = ([AssetInfo]) -> Void
+public typealias AssetInfoBack = ([UIImage]) -> Void
 public typealias AssetResultBack = () -> Void
 
 open class AssetPickerController: UIViewController {
@@ -49,7 +49,14 @@ open class AssetPickerController: UIViewController {
         }
         view.completionBack = {
             if (self.assetResult != nil) {
-                self.assetResult!(self.assetView.selectImages)
+                
+//                self.assetResult!(self.assetView.selectImages)
+                // TODO: 遍历读取UIImage
+                var images = [UIImage]()
+                for info in self.assetView.selectImages {
+                    images.append(info.image)
+                }
+                self.assetResult!(images)
             }
             self.dismiss(animated: true, completion: nil)
         }

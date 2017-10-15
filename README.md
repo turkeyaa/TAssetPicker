@@ -1,9 +1,9 @@
 # TAssetPicker
 An integration of Photos which allows you to pick media(image/video) effortlessly, with circular crop supported, and written in Swift
 
-## Dynamic graph
+## Picture
 
-![Dynamic graph](http://turkeyaa.github.io/assets/2017/TAssetPicker.gif)
+![Dynamic graph](http://turkeyaa.github.io/assets/2017/TAssetPicker.jpg)
 
 ## Usage
 
@@ -33,6 +33,8 @@ configu.leftImage = UIImage.init(named: "cancel")
 configu.rightImage = UIImage.init(named: "completion")
 
 configu.maxCount = 9  // 可选中图片个数
+
+configu.numberBgColor = UIColor.red     // 数量背景颜色
         
 let vc = AssetPickerController.init(configu: configu)
 ```

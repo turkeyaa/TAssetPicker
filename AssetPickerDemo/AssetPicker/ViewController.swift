@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         
 //        let vc = AssetPickerController()
         vc.assetResult = { (result) in
-            print(result)   // AssetInfo 数组对象, 包含UIImage属性
+            print(result)   // UIImage 数组对象
         }
         present(vc, animated: true, completion: nil)
     }
