@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/turkeyaa/TAssetPicker.git", :tag => s.version.to_s }
   s.source_files  = "Classes/**/*.{swift}"
   s.resource_bundles = {
-#      'TAssetPicker' => ['Images/*.{png}']
-      'TAssetPicker' => ['Resource/*.{png}']
+      'TAssetPicker' => ['Images/*.{png}']
+#      'TAssetPicker' => ['Resource/*.{png}']
   }
   s.requires_arc = true
   s.frameworks = 'UIKit', 'Foundation'
