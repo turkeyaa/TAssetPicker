@@ -13,7 +13,9 @@ class AssetCollectionView: UIView {
     var images = [AssetInfo]()
     var selectImages = [AssetInfo]()
     var itemCount: Int = 0
-    var assetBack: AssetResultBack?
+    
+    var clickItemBlock: TASAssetItemBlock?
+    var errorTypeBlock: TASAssetErrorTypeBlock?
     
     var maxCount: Int = 1
     
@@ -66,8 +68,9 @@ extension AssetCollectionView : UICollectionViewDelegate {
         if (info.select && selectImages.count >= maxCount) {
             info.select = !info.select
             
-            UIHelper.show(title: "最多可选择\(maxCount)张图片")
-            
+            if errorTypeBlock != nil {
+                errorTypeBlock!(0)
+            }
             return
         }
         else {
@@ -82,8 +85,8 @@ extension AssetCollectionView : UICollectionViewDelegate {
             // 刷新当前item
             collectionView.reloadItems(at: [indexPath])
             
-            if ((assetBack) != nil) {
-                assetBack!()
+            if clickItemBlock != nil {
+                clickItemBlock!(0)
             }
         }
     }

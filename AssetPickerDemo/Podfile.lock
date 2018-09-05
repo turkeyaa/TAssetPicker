@@ -1,16 +1,16 @@
 PODS:
-  - TAssetPicker (0.0.9)
+  - TAssetPicker (1.0.0)
 
 DEPENDENCIES:
   - TAssetPicker (from `../`)
 
 EXTERNAL SOURCES:
   TAssetPicker:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  TAssetPicker: 2a142c73d1cb6ba47bdfd59d2416718220daded6
+  TAssetPicker: 03f17ce3d219f348885a613868071f6648f28759
 
-PODFILE CHECKSUM: dd70e32802fa44974a867ac37806808d80989175
+PODFILE CHECKSUM: 62d96b1963ebac2b6f11eadba832e8c054ef99b5
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.5.2

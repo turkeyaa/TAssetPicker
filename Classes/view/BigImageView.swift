@@ -25,8 +25,9 @@ class BigImageView: UIView,UIScrollViewDelegate {
         scoller.delegate = self
         return scoller
     }()
+    
     lazy var titleLabel: UILabel = {
-        let label = UILabel.init(frame: CGRect.init(x: 0, y: Device_height-40, width: Device_width, height: 30))
+        let label = UILabel.init(frame: CGRect.init(x: 0, y: TASDevice_height-40, width: TASDevice_width, height: 30))
         label.textAlignment = .center
         label.textColor = UIColor.white
         return label
@@ -40,10 +41,10 @@ class BigImageView: UIView,UIScrollViewDelegate {
     
     func setupUI() -> Void {
         self.backgroundColor = UIColor.black
-        addSubview(scrollerView)
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(close))
         self.addGestureRecognizer(tap)
         
+        addSubview(scrollerView)
         addSubview(titleLabel)
     }
     
@@ -59,19 +60,19 @@ class BigImageView: UIView,UIScrollViewDelegate {
             let image = info.image
             
             let imageView = UIImageView.init(image: image)
-            imageView.frame = CGRect.init(x: CGFloat(index)*Device_width, y: 0, width: Device_width, height: Device_height)
+            imageView.frame = CGRect.init(x: CGFloat(index)*TASDevice_width, y: 0, width: TASDevice_width, height: TASDevice_height)
             imageView.contentMode = .scaleAspectFit
             scrollerView.addSubview(imageView)
             index=index+1
         }
-        scrollerView.contentSize = CGSize.init(width: Device_width*CGFloat(images.count), height: Device_height)
+        scrollerView.contentSize = CGSize.init(width: TASDevice_width*CGFloat(images.count), height: TASDevice_height)
         
         updateIndex()
     }
     
     func updateIndex() -> Void {
         let total = images.count
-        let current = Int(scrollerView.contentOffset.x/Device_width) + 1
+        let current = Int(scrollerView.contentOffset.x/TASDevice_width) + 1
         titleLabel.text = "\(current)"+"/"+"\(total)"
     }
     

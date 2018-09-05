@@ -13,13 +13,12 @@ import Photos
 
 let topHeight: CGFloat = 50.0
 
-public typealias AssetInfoBack = ([UIImage]) -> Void
-public typealias AssetResultBack = () -> Void
-
 open class AssetPickerController: UIViewController {
     
     var images = [AssetInfo]()
-    open var assetResult: AssetInfoBack?
+    public var assetResult: TASAssetInfoBlock?
+    public var errorResult: TASAssetErrorTypeBlock?
+    
     var configuration: Configuration = Configuration.init()
     
     lazy var bigImageView: BigImageView = {
@@ -28,9 +27,9 @@ open class AssetPickerController: UIViewController {
     }()
     
     lazy var assetView: AssetCollectionView = {
-        let assetView : AssetCollectionView = AssetCollectionView.init(frame: CGRect.init(x: 0, y: Device_status+topHeight, width: Device_width, height: Device_height-Device_status-topHeight))
+        let assetView : AssetCollectionView = AssetCollectionView.init(frame: CGRect.init(x: 0, y: TASDevice_status+topHeight, width: TASDevice_width, height: TASDevice_height-TASDevice_status-topHeight))
         assetView.maxCount = self.configuration.maxCount
-        assetView.assetBack = {
+        assetView.clickItemBlock = { (index: Int) in
             if (self.assetView.itemCount == 0) {
                 self.topView.numberLabel.isHidden = true
             }
@@ -39,30 +38,29 @@ open class AssetPickerController: UIViewController {
                 self.topView.numberLabel.isHidden = false
             }
         }
+        assetView.errorTypeBlock = errorResult
         return assetView
     }()
+    
     lazy var topView: TopView = {
         
-        let view: TopView = TopView.init(frame: CGRect.init(x: 0, y: Device_status, width: Device_width, height: topHeight),configu: self.configuration)
-        view.closeBack = {
-            self.dismiss(animated: true, completion: nil)
-        }
-        view.completionBack = {
-            if (self.assetResult != nil) {
-                
-//                self.assetResult!(self.assetView.selectImages)
-                // TODO: 遍历读取UIImage
-                var images = [UIImage]()
-                for info in self.assetView.selectImages {
-                    images.append(info.image)
+        let view: TopView = TopView.init(frame: CGRect.init(x: 0, y: TASDevice_status, width: TASDevice_width, height: topHeight),configu: self.configuration)
+        view.clickItemBlock = { (index: Int) in
+            if index == 0 {
+                self.dismiss(animated: true, completion: nil)
+            } else if index == 1 {
+                if (self.assetResult != nil) {
+                    var images = [UIImage]()
+                    for info in self.assetView.selectImages {
+                        images.append(info.image)
+                    }
+                    self.assetResult!(images)
                 }
-                self.assetResult!(images)
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                self.view.addSubview(self.bigImageView)
+                self.bigImageView.images = self.assetView.selectImages
             }
-            self.dismiss(animated: true, completion: nil)
-        }
-        view.bigImageBack = {
-            self.view.addSubview(self.bigImageView)
-            self.bigImageView.images = self.assetView.selectImages
         }
         return view
     }()
@@ -85,11 +83,10 @@ open class AssetPickerController: UIViewController {
         view.backgroundColor = UIColor.white
         
         setupUI()
-        
         readAlbum()
     }
+    
     func setupUI() -> Void {
-        
         view.addSubview(topView)
         view.addSubview(assetView)
     }
@@ -115,7 +112,6 @@ open class AssetPickerController: UIViewController {
         DispatchQueue.global().async {
             
             let smartAlbums: PHFetchResult = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: nil)
-            print("zhineng:\(smartAlbums.count)个")
             for index in 0..<smartAlbums.count {
                 // 获取一个相册
                 let collection = smartAlbums[index]

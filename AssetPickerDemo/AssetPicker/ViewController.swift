@@ -33,15 +33,19 @@ class ViewController: UIViewController {
         configu.leftImage = UIImage.init(named: "d_close")
         configu.rightImage = UIImage.init(named: "d_complete")
         
-        configu.maxCount = 9    // 最大可选中图片数量
+        configu.maxCount = 2    // 最大可选中图片数量
         
         configu.numberBgColor = UIColor.red     // 数量背景颜色
         
         let vc = AssetPickerController.init(configu: configu)
         
-//        let vc = AssetPickerController()
-        vc.assetResult = { (result) in
+        vc.assetResult = { (result: [UIImage]) in
             print(result)   // UIImage 数组对象
+        }
+        vc.errorResult = { (index: Int) in
+            if index == 0 {
+                print("只能选择\(configu.maxCount)张图片")
+            }
         }
         present(vc, animated: true, completion: nil)
     }

@@ -9,9 +9,9 @@
 Pod::Spec.new do |s|
 
   s.name         = "TAssetPicker"
-  s.version      = "1.0.0"
-  s.ios.deployment_target = "8.0"
-  s.platform     = :ios, '8.0'
+  s.version      = "1.0.1"
+  s.ios.deployment_target = "9.0"
+  s.platform     = :ios, '9.0'
   s.summary      = "Photos for swift"
   s.description  = <<-DESC
   An integration of  Photos.framework which allows you to pick image effortlessly, with circular crop supported, and written in Swift
@@ -21,10 +21,12 @@ Pod::Spec.new do |s|
   s.author             = { "turkeyaa" => "18668089860@163.com" }
   s.source       = { :git => "https://github.com/turkeyaa/TAssetPicker.git", :tag => s.version.to_s }
   s.source_files  = "Classes/**/*.{swift}"
-  s.resource_bundles = { 'TAssetPicker' => ['Images/*.{png}'] }
+  s.resource_bundles = {
+#      'TAssetPicker' => ['Images/*.{png}']
+      'TAssetPicker' => ['Resource/*.{png}']
+  }
   s.requires_arc = true
   s.frameworks = 'UIKit', 'Foundation'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
-  #s.dependency 'SnapKit'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 end

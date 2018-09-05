@@ -12,7 +12,6 @@ import UIKit
 class AssetCell: UICollectionViewCell {
     
     lazy var iconView : UIImageView = {
-        
         var imageView = UIImageView()
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
@@ -21,7 +20,6 @@ class AssetCell: UICollectionViewCell {
     }()
     
     lazy var selectView : UIImageView = {
-        
         var imageView = UIImageView()
         imageView.clipsToBounds = true
         imageView.frame = CGRect.init(x: self.frame.size.width-25, y: 5, width: 20, height: 20)
@@ -32,8 +30,8 @@ class AssetCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.contentView.addSubview(iconView)
-        self.contentView.addSubview(selectView)
+        contentView.addSubview(iconView)
+        contentView.addSubview(selectView)
     }
     
     func updateSelect(select: Bool) -> Void {
