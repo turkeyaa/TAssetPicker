@@ -27,11 +27,14 @@ class ViewController: UIViewController {
     
     @objc func showEvent() -> Void {
         
-        let configu = Configuration.init()
+        let configu = AssetConfiguration.init()
         configu.leftTitle = "取消"
         configu.rightTitle = "完成"
-        configu.leftImage = UIImage.init(named: "d_close")
-        configu.rightImage = UIImage.init(named: "d_complete")
+        
+        let leftImg = UIImage.init(named: "d_close")
+        let rightImg = UIImage.init(named: "d_complete")
+        configu.leftImage = leftImg
+        configu.rightImage = rightImg
         
         configu.maxCount = 2    // 最大可选中图片数量
         

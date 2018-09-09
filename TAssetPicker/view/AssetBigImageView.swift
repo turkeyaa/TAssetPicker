@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-class BigImageView: UIView,UIScrollViewDelegate {
+class AssetBigImageView: UIView,UIScrollViewDelegate {
     
     var images = [AssetInfo]() {
         willSet(newValue) {

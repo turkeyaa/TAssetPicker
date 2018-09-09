@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-open class Configuration: NSObject {
+open class AssetConfiguration: NSObject {
     
     open var leftTitle: String = "取消"
     open var rightTitle: String = "完成"
-    open var leftImage: UIImage?
-    open var rightImage: UIImage?
+    open var leftImage: UIImage? // = AssetManager.getImage("close")
+    open var rightImage: UIImage? // = AssetManager.getImage("complete")
     
     open var numberBgColor: UIColor = UIColor.brown
     

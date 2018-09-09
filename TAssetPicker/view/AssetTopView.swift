@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-class TopView: UIView {
+class AssetTopView: UIView {
     
 //    var closeBack: TASAssetItemBlock?
 //    var completionBack: TASAssetItemBlock?
     var clickItemBlock: TASAssetItemBlock?
     
-    var configu = Configuration() {
+    var configu = AssetConfiguration() {
         willSet(newValue) {
             
         }
@@ -71,7 +71,7 @@ class TopView: UIView {
         addSubview(compBtn)
     }
     
-    convenience init(frame: CGRect, configu: Configuration) {
+    convenience init(frame: CGRect, configu: AssetConfiguration) {
         self.init(frame: frame)
         self.configu = configu
         updateUI()
@@ -81,12 +81,12 @@ class TopView: UIView {
         if configu.leftTitle.count > 0 {
             closeBtn.setImage(nil, for: .normal)
             closeBtn.setTitle(configu.leftTitle, for: .normal)
-            closeBtn.frame = CGRect.init(x: 10, y: 10, width: 40, height: 30)
+            closeBtn.frame = CGRect.init(x: 10, y: 10, width: 40, height: 40)
         }
         if configu.rightTitle.count > 0 {
             compBtn.setImage(nil, for: .normal)
             compBtn.setTitle(configu.rightTitle, for: .normal)
-            compBtn.frame = CGRect.init(x: TASDevice_width-50, y: 10, width: 40, height: 30)
+            compBtn.frame = CGRect.init(x: TASDevice_width-50, y: 10, width: 40, height: 40)
         }
         if configu.leftImage != nil {
             closeBtn.setTitle("", for: .normal)

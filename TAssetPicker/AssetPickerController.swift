@@ -19,10 +19,10 @@ open class AssetPickerController: UIViewController {
     public var assetResult: TASAssetInfoBlock?
     public var errorResult: TASAssetErrorTypeBlock?
     
-    var configuration: Configuration = Configuration.init()
+    var configuration: AssetConfiguration = AssetConfiguration.init()
     
-    lazy var bigImageView: BigImageView = {
-        let view: BigImageView = BigImageView.init(frame: self.view.bounds)
+    lazy var bigImageView: AssetBigImageView = {
+        let view: AssetBigImageView = AssetBigImageView.init(frame: self.view.bounds)
         return view
     }()
     
@@ -42,9 +42,9 @@ open class AssetPickerController: UIViewController {
         return assetView
     }()
     
-    lazy var topView: TopView = {
+    lazy var topView: AssetTopView = {
         
-        let view: TopView = TopView.init(frame: CGRect.init(x: 0, y: TASDevice_status, width: TASDevice_width, height: topHeight),configu: self.configuration)
+        let view: AssetTopView = AssetTopView.init(frame: CGRect.init(x: 0, y: TASDevice_status, width: TASDevice_width, height: topHeight),configu: self.configuration)
         view.clickItemBlock = { (index: Int) in
             if index == 0 {
                 self.dismiss(animated: true, completion: nil)
@@ -65,7 +65,7 @@ open class AssetPickerController: UIViewController {
         return view
     }()
     
-    public init(configu: Configuration) {
+    public init(configu: AssetConfiguration) {
         self.configuration = configu
         super.init(nibName: nil, bundle: nil)
     }
