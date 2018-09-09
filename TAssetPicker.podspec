@@ -21,13 +21,16 @@ Pod::Spec.new do |s|
   s.author             = { "turkeyaa" => "18668089860@163.com" }
   s.source       = { :git => "https://github.com/turkeyaa/TAssetPicker.git", :tag => s.version.to_s }
   s.source_files = "TAssetPicker/**/*.{swift}"
-  s.resources    = {
-      'TAssetPicker' => ['Resource/*.{png}']
+  
+#  不推荐，名称冲突
+#  s.resources    = ['TAssetPicker/Resource/*.{png}']
+#  s.resources    = "TAssetPicker/Resource/TAssetPicker.bundle"
+
+#    推荐方式
+  s.resource_bundles = {
+#      'TAssetPicker' => ['TAssetPicker/Resource/TAssetPicker.bundle']
+    'TAssetPicker' => ['TAssetPicker/Resource/*.{png}']
   }
-#  s.resource_bundles = {
-#      'TAssetPicker' => ['Resource/*.{png}']
-#      'TAssetPicker' => ['TAssetPicker.bundle/*.{png}']
-#  }
   s.requires_arc = true
   s.frameworks = 'UIKit', 'Foundation'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
