@@ -81,12 +81,12 @@ class AssetTopView: UIView {
         if configu.leftTitle.count > 0 {
             closeBtn.setImage(nil, for: .normal)
             closeBtn.setTitle(configu.leftTitle, for: .normal)
-            closeBtn.frame = CGRect.init(x: 10, y: 10, width: 40, height: 40)
+            closeBtn.frame = CGRect.init(x: 10, y: 10, width: 30, height: 30)
         }
         if configu.rightTitle.count > 0 {
             compBtn.setImage(nil, for: .normal)
             compBtn.setTitle(configu.rightTitle, for: .normal)
-            compBtn.frame = CGRect.init(x: TASDevice_width-50, y: 10, width: 40, height: 40)
+            compBtn.frame = CGRect.init(x: TASDevice_width-50, y: 10, width: 30, height: 30)
         }
         if configu.leftImage != nil {
             closeBtn.setTitle("", for: .normal)
