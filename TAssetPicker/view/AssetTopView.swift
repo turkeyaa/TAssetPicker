@@ -11,8 +11,6 @@ import UIKit
 
 class AssetTopView: UIView {
     
-//    var closeBack: TASAssetItemBlock?
-//    var completionBack: TASAssetItemBlock?
     var clickItemBlock: TASAssetItemBlock?
     
     var configu = AssetConfiguration() {
@@ -28,7 +26,8 @@ class AssetTopView: UIView {
         let button = UIButton.init(type: UIButtonType.custom)
         button.addTarget(self, action: #selector(closeEvent), for: .touchUpInside)
         button.setTitleColor(UIColor.lightGray, for: .normal)
-        button.frame = CGRect.init(x: 10, y: 10, width: 30, height: 30)
+        button.frame = CGRect.init(x: 10, y: 10, width: 40, height: 30)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         return button
     }()
     lazy var titleLabel: UILabel = {
@@ -48,7 +47,7 @@ class AssetTopView: UIView {
         label.clipsToBounds = true
         label.textColor = UIColor.white
         label.isHidden = true
-        label.frame = CGRect.init(x: TASDevice_width-80, y: 10, width: 30, height: 30)
+        label.frame = CGRect.init(x: TASDevice_width-90, y: 10, width: 30, height: 30)
         label.isUserInteractionEnabled = true
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(tapEvent))
         label.addGestureRecognizer(tap)
@@ -58,7 +57,8 @@ class AssetTopView: UIView {
         let button = UIButton.init(type: UIButtonType.custom)
         button.addTarget(self, action: #selector(completionEvent), for: .touchUpInside)
         button.setTitleColor(UIColor.lightGray, for: .normal)
-        button.frame = CGRect.init(x: TASDevice_width-50, y: 10, width: 30, height: 30)
+        button.frame = CGRect.init(x: TASDevice_width-50, y: 10, width: 40, height: 30)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         return button
     }()
     
@@ -81,12 +81,10 @@ class AssetTopView: UIView {
         if configu.leftTitle.count > 0 {
             closeBtn.setImage(nil, for: .normal)
             closeBtn.setTitle(configu.leftTitle, for: .normal)
-            closeBtn.frame = CGRect.init(x: 10, y: 10, width: 30, height: 30)
         }
         if configu.rightTitle.count > 0 {
             compBtn.setImage(nil, for: .normal)
             compBtn.setTitle(configu.rightTitle, for: .normal)
-            compBtn.frame = CGRect.init(x: TASDevice_width-50, y: 10, width: 30, height: 30)
         }
         if configu.leftImage != nil {
             closeBtn.setTitle("", for: .normal)

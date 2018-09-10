@@ -27,7 +27,7 @@ open class AssetPickerController: UIViewController {
     }()
     
     lazy var assetView: AssetCollectionView = {
-        let assetView : AssetCollectionView = AssetCollectionView.init(frame: CGRect.init(x: 0, y: TASDevice_status+topHeight, width: TASDevice_width, height: TASDevice_height-TASDevice_status-topHeight))
+        let assetView : AssetCollectionView = AssetCollectionView.init(frame: CGRect.init(x: 0, y: TASDevice_status+topHeight, width: TASDevice_width, height: TASDevice_height-TASDevice_status-topHeight),configu: self.configuration)
         assetView.maxCount = self.configuration.maxCount
         assetView.clickItemBlock = { (index: Int) in
             if (self.assetView.itemCount == 0) {

@@ -15,6 +15,8 @@ open class AssetConfiguration: NSObject {
     open var rightTitle: String = "完成"
     open var leftImage: UIImage? // = AssetManager.getImage("close")
     open var rightImage: UIImage? // = AssetManager.getImage("complete")
+    open var selectImage: UIImage?
+    open var deselectImage: UIImage?
     
     open var numberBgColor: UIColor = UIColor.brown
     

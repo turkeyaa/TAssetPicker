@@ -3,7 +3,7 @@ An integration of Photos which allows you to pick media(image/video) effortlessl
 
 ## Picture
 
-![Dynamic graph](http://turkeyaa.github.io/assets/2017/TAssetPicker.jpg)
+![Dynamic graph](Resource/asset.png)
 
 ## Usage
 
@@ -25,12 +25,17 @@ You can inject `Configuration` instance to TAssetPicker, which allows you to con
 to zero, which means that the user can select as many images as he/she wants.
 
 ```swift
-let configu = Configuration.init()
+/// 导航栏标题
+let configu = AssetConfiguration.init()
 configu.leftTitle = "取消"
 configu.rightTitle = "完成"
         
-configu.leftImage = UIImage.init(named: "cancel")
-configu.rightImage = UIImage.init(named: "completion")
+configu.leftImage = UIImage.init(named: "d_close")
+configu.rightImage = UIImage.init(named: "d_complete")
+
+/// 选择 or 反选图片，必须
+configu.selectImage = UIImage.init(named: "select")
+configu.deselectImage = UIImage.init(named: "deselect")
 
 configu.maxCount = 9  // 可选中图片个数
 
