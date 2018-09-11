@@ -11,8 +11,13 @@ An integration of Photos which allows you to pick media(image/video) effortlessl
 
 ```swift
 let vc = AssetPickerController()
-vc.assetResult = { (result) in
-	print(result)
+vc.assetResult = { (result: [UIImage]) in
+	print(result)   // UIImage 数组对象
+}
+vc.errorResult = { (index: Int) in
+	if index == 0 {
+		print("只能选择\(configu.maxCount)张图片")
+	}
 }
 present(vc, animated: true, completion: nil)
 ```

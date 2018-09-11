@@ -19,8 +19,9 @@ open class AssetConfiguration: NSObject {
     open var deselectImage: UIImage?
     
     open var numberBgColor: UIColor = UIColor.brown
-    
     open var titleColor: UIColor = UIColor.black
+    open var leftTitleColor: UIColor = UIColor.lightGray
+    open var rightTitleColor: UIColor = UIColor.darkGray
     
     open var maxCount: Int = 9
     

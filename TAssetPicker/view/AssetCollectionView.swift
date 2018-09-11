@@ -108,7 +108,7 @@ extension AssetCollectionView : UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! AssetCell
         let info = self.images[indexPath.item]
         cell.iconView.image = info.image
-        cell.updateSelect(select: info.select, selectImage: configu.selectImage!, deselectImage: configu.deselectImage!)
+        cell.updateSelect(select: info.select, selectImage: configu.selectImage, deselectImage: configu.deselectImage)
         return cell
     }
 }

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TAssetPicker"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.ios.deployment_target = "9.0"
   s.platform     = :ios, '9.0'
   s.summary      = "Photos for swift"

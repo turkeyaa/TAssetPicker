@@ -29,16 +29,16 @@ class ViewController: UIViewController {
         
         /// 导航栏标题
         let configu = AssetConfiguration.init()
-        configu.leftTitle = "取消"
-        configu.rightTitle = "完成"
+//        configu.leftTitle = "取消"
+//        configu.rightTitle = "完成"
         
         /// 导航栏图标
         configu.leftImage = UIImage.init(named: "d_close")
         configu.rightImage = UIImage.init(named: "d_complete")
         
         /// 选择 or 反选图片，必须
-        configu.selectImage = UIImage.init(named: "select")
-        configu.deselectImage = UIImage.init(named: "deselect")
+//        configu.selectImage = UIImage.init(named: "select")
+//        configu.deselectImage = UIImage.init(named: "deselect")
         
         configu.maxCount = 2    // 最大可选中图片数量
         

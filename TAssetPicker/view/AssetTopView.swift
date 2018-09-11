@@ -30,6 +30,7 @@ class AssetTopView: UIView {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         return button
     }()
+    
     lazy var titleLabel: UILabel = {
         let label = UILabel.init()
         label.text = "全部照片"
@@ -38,6 +39,7 @@ class AssetTopView: UIView {
         label.frame = CGRect.init(x: 50, y: 10, width: TASDevice_width-100, height: 30)
         return label
     }()
+    
     lazy var numberLabel: UILabel = {
         let label = UILabel.init()
         label.textAlignment = .center
@@ -53,6 +55,7 @@ class AssetTopView: UIView {
         label.addGestureRecognizer(tap)
         return label
     }()
+    
     lazy var compBtn: UIButton = {
         let button = UIButton.init(type: UIButtonType.custom)
         button.addTarget(self, action: #selector(completionEvent), for: .touchUpInside)
@@ -97,6 +100,8 @@ class AssetTopView: UIView {
         
         numberLabel.backgroundColor = configu.numberBgColor
         titleLabel.textColor = configu.titleColor
+        closeBtn.setTitleColor(configu.leftTitleColor, for: .normal)
+        compBtn.setTitleColor(configu.rightTitleColor, for: .normal)
     }
     
     @objc func closeEvent() -> Void {
