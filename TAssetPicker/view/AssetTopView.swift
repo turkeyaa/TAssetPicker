@@ -23,7 +23,7 @@ class AssetTopView: UIView {
     }
     
     lazy var closeBtn: UIButton = {
-        let button = UIButton.init(type: UIButtonType.custom)
+        let button = UIButton.init(type: UIButton.ButtonType.custom)
         button.addTarget(self, action: #selector(closeEvent), for: .touchUpInside)
         button.setTitleColor(UIColor.lightGray, for: .normal)
         button.frame = CGRect.init(x: 10, y: 10, width: 40, height: 30)
@@ -57,7 +57,7 @@ class AssetTopView: UIView {
     }()
     
     lazy var compBtn: UIButton = {
-        let button = UIButton.init(type: UIButtonType.custom)
+        let button = UIButton.init(type: UIButton.ButtonType.custom)
         button.addTarget(self, action: #selector(completionEvent), for: .touchUpInside)
         button.setTitleColor(UIColor.lightGray, for: .normal)
         button.frame = CGRect.init(x: TASDevice_width-50, y: 10, width: 40, height: 30)

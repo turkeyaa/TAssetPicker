@@ -12,7 +12,7 @@ import Photos
 open class AssetManager {
     
     // MARK: - 本地图片
-    open static func getImage(_ name: String) -> UIImage {
+    public static func getImage(_ name: String) -> UIImage {
         
         let traitCollection = UITraitCollection(displayScale: 3)
         var bundle = Bundle(for: AssetManager.self)

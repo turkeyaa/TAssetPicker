@@ -19,7 +19,6 @@
 		5A9905C227ED18101F6B64C0E0FA76A3 /* Pods-AssetPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B0288894BC3E95D63B88C9B89CACAC /* Pods-AssetPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		602169892144E922005E6281 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = 602169852144E921005E6281 /* select.png */; };
 		6021698A2144E922005E6281 /* deselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 602169862144E922005E6281 /* deselect.png */; };
-		6021698B2144E928005E6281 /* TAssetPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 602169822144E8EA005E6281 /* TAssetPicker.bundle */; };
 		75AB29E897DC90613DC78E7CD8201D98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		8F32047E65F3FCCA9EBCB8B88749B0E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		C37CBCB4D2B29DE57CB6433DA20826EE /* AssetBigImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17CA04527D16D59044C91B7338CBC09 /* AssetBigImageView.swift */; };
@@ -55,7 +54,6 @@
 		49FE3016A71E5119CA41C983E62904F1 /* Pods-AssetPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AssetPicker.modulemap"; sourceTree = "<group>"; };
 		4AD11D126F9F06A4536A75976B64A52B /* Pods-AssetPicker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AssetPicker-frameworks.sh"; sourceTree = "<group>"; };
 		4DBD456A5334B30004A9E76A5F5B3A5C /* Pods-AssetPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssetPicker.debug.xcconfig"; sourceTree = "<group>"; };
-		602169822144E8EA005E6281 /* TAssetPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TAssetPicker.bundle; sourceTree = "<group>"; };
 		602169852144E921005E6281 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
 		602169862144E922005E6281 /* deselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deselect.png; sourceTree = "<group>"; };
 		6B06B8BF648133C1E5D3605FA23B8293 /* Pods-AssetPicker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AssetPicker-resources.sh"; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 			children = (
 				602169862144E922005E6281 /* deselect.png */,
 				602169852144E921005E6281 /* select.png */,
-				602169822144E8EA005E6281 /* TAssetPicker.bundle */,
 			);
 			name = Resource;
 			path = TAssetPicker/Resource;
@@ -363,6 +360,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					8883F22229D0E2E4ECE1E3BFD0A21C98 = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -391,7 +393,6 @@
 				6021698A2144E922005E6281 /* deselect.png in Resources */,
 				602169892144E922005E6281 /* select.png in Resources */,
 				4DBD9BBB30F148A13FCE426CECC3BA11 /* TAssetPicker.bundle in Resources */,
-				6021698B2144E928005E6281 /* TAssetPicker.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +544,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -677,7 +678,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

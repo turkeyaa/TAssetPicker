@@ -30,21 +30,24 @@ You can inject `Configuration` instance to TAssetPicker, which allows you to con
 to zero, which means that the user can select as many images as he/she wants.
 
 ```swift
-/// 导航栏标题
+/// 自定义导航栏标题
 let configu = AssetConfiguration.init()
 configu.leftTitle = "取消"
 configu.rightTitle = "完成"
         
+/// 自定义导航栏图标
 configu.leftImage = UIImage.init(named: "d_close")
 configu.rightImage = UIImage.init(named: "d_complete")
 
-/// 选择 or 反选图片，必须
+/// 选择 or 反选图片占位符
 configu.selectImage = UIImage.init(named: "select")
 configu.deselectImage = UIImage.init(named: "deselect")
 
-configu.maxCount = 9  // 可选中图片个数
+/// 可选中图片最大数
+configu.maxCount = 9  
 
-configu.numberBgColor = UIColor.red     // 数量背景颜色
+/// 背景颜色
+configu.numberBgColor = UIColor.red     
         
 let vc = AssetPickerController.init(configu: configu)
 ```
